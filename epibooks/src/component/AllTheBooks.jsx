@@ -7,7 +7,7 @@ function CardEpibook() {
         <h2 className='text-center'> FANTASY </h2>
         {Fantasy.map((book)=> {
             return (
-                <Card className='col-2 m-2 rounded '>
+                <Card className='col-2 m-2 rounded' key={book.asin}>
                 <Card.Img variant="fluid" src={book.img}/>
                 <Card.Body >
                   <Card.Title>{book.title}</Card.Title>
